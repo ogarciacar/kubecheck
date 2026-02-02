@@ -1,11 +1,11 @@
-package kluster1_test
+package kubecheck_test
 
 import (
 	"fmt"
 	"os"
 	"testing"
 
-	"github.com/ogarciacar/kubecheck/kluster1"
+	"github.com/ogarciacar/kubecheck/kubecheck"
 )
 
 // Represents the Kubernetes cluster

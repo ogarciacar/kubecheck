@@ -1,4 +1,4 @@
-package kluster1_test
+package kubecheck_test
 
 import (
 	"context"
