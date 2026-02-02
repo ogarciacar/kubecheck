@@ -34,7 +34,7 @@ func TestGetClientset(t *testing.T) {
 	require.NoError(t, err, "should not be error")
 
 	// additional checks to ensure the client is functional
-	want := kluster1.K8sRelease_v1_30_10.String()
+	want := kubecheck.K8sRelease_v1_30_10.String()
 	require.Equal(t, want, got.String(), "should be equal")
 }
 
@@ -56,7 +56,7 @@ func TestGetKubeconfigPath(t *testing.T) {
 	require.FileExists(t, kubeconfig, "should exist")
 }
 
-// TestGetHostPort tests the GetHostPort function of the kluster1 package.
+// TestGetHostPort tests the GetHostPort function of the kubecheck package.
 // It creates a new Kubernetes cluster, retrieves the host port where the cluster ingress is exposed,
 // and asserts that the host port is in the range of Dynamic ports.
 // It performs the following steps:

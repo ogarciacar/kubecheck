@@ -11,7 +11,7 @@ func TestMyKubernetesApp(t *testing.T) {
 	t.Parallel()
 
 	// 1. Creates a new Kubernetes cluster with a specified release version.
-	k1, err := kluster1.NewCluster(kluster1.K8sRelease_v1_30_10)
+	k1, err := kubecheck.NewCluster(kubecheck.K8sRelease_v1_30_10)
 
 	// 2. Check the cluster was successfully created
 	if err != nil {
@@ -29,7 +29,7 @@ func TestMyKubernetesApp(t *testing.T) {
 		t.Fatalf("should no be error %s", err)
 	}
 
-	expected := kluster1.K8sRelease_v1_30_10.String()
+	expected := kubecheck.K8sRelease_v1_30_10.String()
 	got := serverVersion.String()
 
 	if expected != got {
