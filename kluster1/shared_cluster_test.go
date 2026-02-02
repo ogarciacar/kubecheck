@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ogarciacar/kluster1/kluster1"
+	"github.com/ogarciacar/kubecheck/kluster1"
 )
 
 // Represents the Kubernetes cluster

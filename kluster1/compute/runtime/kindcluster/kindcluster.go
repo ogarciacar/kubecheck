@@ -7,7 +7,7 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/ogarciacar/kluster1/sdk"
+	"github.com/ogarciacar/kubecheck/sdk"
 	"sigs.k8s.io/kind/pkg/cluster"
 )
 

@@ -1,4 +1,4 @@
-module github.com/ogarciacar/kluster1
+module github.com/ogarciacar/kubecheck
 
 go 1.23.0
 

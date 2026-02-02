@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ogarciacar/kluster1/kluster1/storage/persistence/tempkubeconfig"
+	"github.com/ogarciacar/kubecheck/kluster1/storage/persistence/tempkubeconfig"
 	"github.com/stretchr/testify/require"
 )
 

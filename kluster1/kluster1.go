@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ogarciacar/kluster1/kluster1/compute/runtime/kindcluster"
-	"github.com/ogarciacar/kluster1/kluster1/storage/persistence/tempkubeconfig"
-	"github.com/ogarciacar/kluster1/sdk"
+	"github.com/ogarciacar/kubecheck/kluster1/compute/runtime/kindcluster"
+	"github.com/ogarciacar/kubecheck/kluster1/storage/persistence/tempkubeconfig"
+	"github.com/ogarciacar/kubecheck/sdk"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
 )
