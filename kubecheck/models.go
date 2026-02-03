@@ -1,4 +1,4 @@
-package kluster1
+package kubecheck
 
 import "fmt"
 

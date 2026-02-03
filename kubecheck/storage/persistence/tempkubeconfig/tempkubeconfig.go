@@ -19,7 +19,7 @@ func (tk *TempKubeconfig) CreateTempKubeconfig() (*string, error) {
 
 	log.Println("Creating temporary directory to persist the Kubeconfig file")
 
-	uniqueTempDir, err := os.MkdirTemp(os.TempDir(), "*-kluster1")
+	uniqueTempDir, err := os.MkdirTemp(os.TempDir(), "*-kubecheck")
 
 	if err != nil {
 		return nil, err

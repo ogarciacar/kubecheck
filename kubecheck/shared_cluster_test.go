@@ -1,15 +1,15 @@
-package kluster1_test
+package kubecheck_test
 
 import (
 	"fmt"
 	"os"
 	"testing"
 
-	"github.com/ogarciacar/kluster1/kluster1"
+	"github.com/ogarciacar/kubecheck/kubecheck"
 )
 
 // Represents the Kubernetes cluster
-var k1 *kluster1.K
+var k1 *kubecheck.K
 
 // One TestMain function per package
 // The TestMain function performs the following steps:
@@ -22,7 +22,7 @@ func TestMain(m *testing.M) {
 	var err error
 
 	// 1. Creates a new Kubernetes cluster with a specified release version.
-	k1, err = kluster1.NewCluster(kluster1.K8sRelease_v1_30_10)
+	k1, err = kubecheck.NewCluster(kubecheck.K8sRelease_v1_30_10)
 
 	if err != nil {
 		os.Exit(1)

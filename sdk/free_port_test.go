@@ -3,7 +3,7 @@ package sdk_test
 import (
 	"testing"
 
-	"github.com/ogarciacar/kluster1/sdk"
+	"github.com/ogarciacar/kubecheck/sdk"
 	"github.com/stretchr/testify/assert"
 )
 

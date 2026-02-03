@@ -1,12 +1,12 @@
-package kluster1
+package kubecheck
 
 import (
 	"fmt"
 	"log"
 
-	"github.com/ogarciacar/kluster1/kluster1/compute/runtime/kindcluster"
-	"github.com/ogarciacar/kluster1/kluster1/storage/persistence/tempkubeconfig"
-	"github.com/ogarciacar/kluster1/sdk"
+	"github.com/ogarciacar/kubecheck/kubecheck/compute/runtime/kindcluster"
+	"github.com/ogarciacar/kubecheck/kubecheck/storage/persistence/tempkubeconfig"
+	"github.com/ogarciacar/kubecheck/sdk"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
 )
@@ -31,14 +31,14 @@ type k8sKubeconfig interface {
 }
 
 // NewCluster creates a new Kubernetes cluster using the specified Kubernetes version and a temporary directory for the kubeconfig file.
-// It returns a pointer to a kluster1 instance and an error if the cluster creation fails.
+// It returns a pointer to a kubecheck instance and an error if the cluster creation fails.
 //
 // Parameters:
 //   - k8sVersion: The version of Kubernetes to use for the cluster.
 //   - tempDir: The directory where the temporary kubeconfig file will be stored.
 //
 // Returns:
-//   - *kluster1: A pointer to the created kluster1 instance.
+//   - *kubecheck: A pointer to the created kubecheck instance.
 //   - error: An error if the cluster creation fails.
 func NewCluster(k8sVersion K8sVersion) (*K, error) {
 
@@ -90,7 +90,7 @@ func NewCluster(k8sVersion K8sVersion) (*K, error) {
 	}, nil
 }
 
-// Destroy deletes the cluster associated with the kluster1 instance.
+// Destroy deletes the cluster associated with the kubecheck instance.
 // It logs the deletion process and calls the engine's Delete method
 // with the cluster's name and kubeconfig.
 //
@@ -110,13 +110,13 @@ func (k *K) Destroy() error {
 	return nil
 }
 
-// GetClientset returns the Kubernetes clientset associated with the kluster1 instance.
+// GetClientset returns the Kubernetes clientset associated with the kubecheck instance.
 // This clientset can be used to interact with the Kubernetes API server.
 func (k *K) GetClientset() *kubernetes.Clientset {
 	return k.k8sClient
 }
 
-// GetKubeconfigPath returns the kubeconfig string associated with the kluster1 instance.
+// GetKubeconfigPath returns the kubeconfig string associated with the kubecheck instance.
 func (k *K) GetKubeconfigPath() string {
 	return k.kubeconfig
 }
