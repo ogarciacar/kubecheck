@@ -1,0 +1,41 @@
+{
+  "extraKnownMarketplaces": {
+    "miro-plugins": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/miroapp-dev/claude-marketplace.git"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "miro-dijkstra-plugin@miro-plugins": true
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git status:*)",
+      "Bash(git show:*)",
+      "Bash(git blame:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)"
+    ],
+    "deny": [
+      "Bash(sudo:*)",
+      "Bash(su :*)",
+      "Bash(rm -rf:*)",
+      "Bash(chmod:*)",
+      "Bash(chown:*)",
+      "Bash(dd :*)",
+      "Bash(mkfs:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(nc :*)",
+      "Bash(ncat:*)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)"
+    ]
+  }
+}
