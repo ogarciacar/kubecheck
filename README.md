@@ -1,5 +1,6 @@
 # `kluster1`: Kubernetes TDD, Simplified.
 [![Go Version](https://img.shields.io/badge/Go-1.23+-blue)](https://golang.org/) [![Go Report Card](https://goreportcard.com/badge/github.com/ogarciacar/kluster1)](https://goreportcard.com/report/github.com/ogarciacar/kluster1)
+[![dijkstra 78%](https://img.shields.io/badge/dijkstra-78%25-ffd700?logo=miro)](https://github.com/miroapp-dev/miro-dijkstra)
 
 **Stop managing Kubernetes infrastructure, start testing your applications.**
 
